@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\git\\Centralized\\Centralized_Test\\API_Script\\API_Script.csproj": {}
+    "D:\\newgit\\SpecflowFramework\\API_Script\\API_Script.csproj": {}
   },
   "projects": {
-    "D:\\git\\Centralized\\Centralized_Test\\API_Script\\API_Script.csproj": {
+    "D:\\newgit\\SpecflowFramework\\API_Script\\API_Script.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\git\\Centralized\\Centralized_Test\\API_Script\\API_Script.csproj",
+        "projectUniqueName": "D:\\newgit\\SpecflowFramework\\API_Script\\API_Script.csproj",
         "projectName": "API_Script",
-        "projectPath": "D:\\git\\Centralized\\Centralized_Test\\API_Script\\API_Script.csproj",
+        "projectPath": "D:\\newgit\\SpecflowFramework\\API_Script\\API_Script.csproj",
         "packagesPath": "C:\\Users\\vmalik\\.nuget\\packages\\",
-        "outputPath": "D:\\git\\Centralized\\Centralized_Test\\API_Script\\obj\\",
+        "outputPath": "D:\\newgit\\SpecflowFramework\\API_Script\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

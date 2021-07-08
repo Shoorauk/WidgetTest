@@ -11,6 +11,7 @@ namespace UI_Script.Page
     public class AccountPage : BasePage
     {
         By clickLogin = By.CssSelector(".dropdown-toggle.disabled");
+
         By crmUsername = By.XPath("//input[@id='username']");
         By crmPassword = By.XPath("//input[@id='password']");
         By SubmitBtn = By.XPath("//input[@id='Login']");
