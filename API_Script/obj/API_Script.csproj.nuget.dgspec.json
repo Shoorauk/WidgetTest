@@ -60,6 +60,18 @@
               "target": "Package",
               "version": "[106.11.7, )"
             },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.9.8, )"
+            },
+            "SpecFlow.Assist.Dynamic": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.9.8, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[3.0.2, )"

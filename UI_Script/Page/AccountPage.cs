@@ -11,7 +11,6 @@ namespace UI_Script.Page
     public class AccountPage : BasePage
     {
         By clickLogin = By.CssSelector(".dropdown-toggle.disabled");
-
         By crmUsername = By.XPath("//input[@id='username']");
         By crmPassword = By.XPath("//input[@id='password']");
         By SubmitBtn = By.XPath("//input[@id='Login']");
@@ -39,8 +38,8 @@ namespace UI_Script.Page
         public void LoginCRM(string url,string userName,string password)
         {
             GoToUrl(url);       
-            waitForelementExist(clickLogin);          
-            JavaScriptexecutor(clickLogin);
+            waitForelementExist(clickLogin);
+            JavaScriptexecutorForClick(clickLogin);
             waitForelementVisible(crmUsername);
             getElement(crmUsername).SendKeys(userName);
             getElement(crmPassword).SendKeys(password);

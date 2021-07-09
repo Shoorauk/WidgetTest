@@ -680,3 +680,5 @@ D:\newgit\SpecflowFramework\UI_Script\obj\Debug\netcoreapp3.1\UI_Script.csproj.C
 D:\newgit\SpecflowFramework\UI_Script\obj\Debug\netcoreapp3.1\UI_Script.dll
 D:\newgit\SpecflowFramework\UI_Script\obj\Debug\netcoreapp3.1\UI_Script.pdb
 D:\newgit\SpecflowFramework\UI_Script\obj\Debug\netcoreapp3.1\UI_Script.genruntimeconfig.cache
+D:\newgit\SpecflowFramework\UI_Script\obj\Debug\netcoreapp3.1\UI_Script.csproj.AssemblyReference.cache
+D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\RestSharp.dll

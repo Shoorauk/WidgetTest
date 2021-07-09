@@ -77,11 +77,10 @@ namespace UI_Script.Page
             }
         }
 
-        public void JavaScriptexecutor(By element)
+        public void JavaScriptexecutorForClick(By element)
         {
             IJavaScriptExecutor js = (IJavaScriptExecutor)_driver;
             js.ExecuteScript("arguments[0].click();", _driver.FindElement(element));
-
         }
     }
 }

@@ -24,7 +24,7 @@ namespace API_Script.EndPoints
             //create and execute the Get Request
             IRestRequest restRequest = new RestRequest(getDemoUrl);
             //Pass the header in request
-            restRequest.AddHeader("X-SessionToken", "71339fc1f78b480e8669095c5bb67580");
+            restRequest.AddHeader("X-SessionToken", "0ff47c7e25844d90bbe9888952853d1e");
             restRequest.AddHeader("Content-Type", "application/xml");
             restClient.Get(restRequest);
             //jsonresponse 
@@ -76,7 +76,7 @@ namespace API_Script.EndPoints
 
             };
             restRequest.AddHeader("Content-Type", "application/xml");
-            restRequest.AddHeader("X-SessionToken", "71339fc1f78b480e8669095c5bb67580");
+            restRequest.AddHeader("X-SessionToken", "0ff47c7e25844d90bbe9888952853d1e");
             IRestResponse<List<JsonResponseObject>> restResponseJson = restClient.Get<List<JsonResponseObject>>(restRequest);
             Assert.AreEqual(200, (int)restResponseJson.StatusCode);
             Console.WriteLine(restResponseJson.Content);
@@ -88,7 +88,7 @@ namespace API_Script.EndPoints
         {
             Dictionary<string, string> header = new Dictionary<string, string>()
             {
-                { "X-SessionToken", "71339fc1f78b480e8669095c5bb67580"},
+                { "X-SessionToken", "0ff47c7e25844d90bbe9888952853d1e"},
                 { "Content-Type", "application/json"}
             };
 
