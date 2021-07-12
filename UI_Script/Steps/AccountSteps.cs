@@ -6,6 +6,7 @@ using System.Text;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using UI_Script.Helper;
+using UI_Script.Hook;
 using UI_Script.Page;
 
 namespace UI_Script.Steps
@@ -15,7 +16,7 @@ namespace UI_Script.Steps
     {
         private WebDriver _driver;
         private AccountPage _AccountPage;
-        string loginUrl = "https://www.salesforce.com/";
+       
 
         public AccountSteps(WebDriver driver)
         {
@@ -27,10 +28,11 @@ namespace UI_Script.Steps
         public void GivenNavigateToCRMAccountPage(Table table)
         {
             dynamic data = table.CreateDynamicInstance();
-            //_driver.CurrentPage.As<AccountPage>().LoginCRM(loginUrl, data.userid,data.password);
-            _AccountPage.LoginCRM(loginUrl, data.userid, data.password);
+            //_driver.CurrentPage.As<AccountPage>().LoginCRM(Hooks1.configSetting.BaseUrl, data.userid,data.password);
+           _AccountPage.LoginCRM(Hooks1.configSetting.BaseUrl, data.userid, data.password);
+            Serilog.Log.Debug("Pass the value for entering username and password {0}", table);
         }
-
+         
         [When(@"Create a account with correct field label and name")]
         public void WhenCreateAAccountWithCorrectFieldLabelAndName(Table table)
         {
@@ -45,11 +47,16 @@ namespace UI_Script.Steps
             _AccountPage.SaveAccountInfo();
         }
 
-        [Then(@"Account customer field should be created")]
-        public void ThenAccountCustomerFieldShouldBeCreated()
+
+        [Then(@"Account customer field should be created ""(.*)""")]
+        public void ThenAccountCustomerFieldShouldBeCreated(string p0)
         {
-            Assert.AreEqual("Test", _AccountPage.AccoutSaved());
+            Assert.AreEqual(p0, _AccountPage.AccoutSaved());
+            Serilog.Log.Debug("expected result value {p0}",p0);
         }
+
+
+       
 
     }
 }

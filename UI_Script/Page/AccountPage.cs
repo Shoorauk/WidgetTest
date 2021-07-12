@@ -37,47 +37,36 @@ namespace UI_Script.Page
         
         public void LoginCRM(string url,string userName,string password)
         {
-            GoToUrl(url);       
-            waitForelementExist(clickLogin);
-            JavaScriptexecutorForClick(clickLogin);
-            waitForelementVisible(crmUsername);
-            getElement(crmUsername).SendKeys(userName);
-            getElement(crmPassword).SendKeys(password);
-            getElement(SubmitBtn).Click();
-            waitForelementExist(closeligtingPage);
-            getElement(closeligtingPage).Click();
-            waitForelementVisible(clickSendBtn);
-            getElement(clickSendBtn).Click();
-            waitForelementVisible(clickSetupBtn);
-            getElement(clickSetupBtn).Click();
+            GoToUrl(url);
+            ClickOnButton(clickLogin);
+            SendText(crmUsername, userName);
+            SendText(crmPassword, password);
+            ClickOnButton(SubmitBtn);
+            ClickOnButton(closeligtingPage);
+            ClickOnButton(clickSendBtn);
+            ClickOnButton(clickSetupBtn);
+            Serilog.Log.Debug("check the value of locator url {0} ,username {username},password {password}", url, userName, password);
+            
 
          }
 
         public void NavigateToAccount()
         {
-            waitForelementVisible(clickCustomizebtn);
-            getElement(clickCustomizebtn).Click();
-            waitForelementVisible(clickOnAccounts);
-            getElement(clickOnAccounts).Click();
-            waitForelementVisible(ClickOnField);
-            getElement(ClickOnField).Click();
+            ClickOnButton(clickCustomizebtn);
+            ClickOnButton(clickOnAccounts);
+            ClickOnButton(ClickOnField);
         }
 
         public void OpenAccount(string fieldLable,string fieldName)
         {
-            waitForelementVisible(ClickOnNewBtn);
-            getElement(ClickOnNewBtn).Click();
-            waitForelementVisible(ClickOnCheckBox);
-            getElement(ClickOnCheckBox).Click();
-            waitForelementVisible(ClickNextBtn);
-            getElement(ClickNextBtn).Click();
-            waitForelementVisible(enterFieldLbl);
-            getElement(enterFieldLbl).SendKeys(fieldLable);
-            getElement(enterFieldName).SendKeys(fieldName);
-            getElement(ClickNextBtn).Click();
-            Thread.Sleep(5000);
-            getElement(ClickNextBtn).Click();
-         
+
+            ClickOnButton(ClickOnNewBtn);
+            ClickOnButton(ClickOnCheckBox);
+            ClickOnButton(ClickNextBtn);
+            SendText(enterFieldLbl, fieldLable);
+            SendText(enterFieldName, fieldName);
+            ClickOnButton(ClickNextBtn);
+            ClickOnButton(ClickNextBtn);
 
 
 
@@ -85,8 +74,7 @@ namespace UI_Script.Page
 
         public void SaveAccountInfo()
         {
-            waitForelementVisible(ClickOnSave);
-            getElement(ClickOnSave).Click();
+            ClickOnButton(ClickOnSave);
         }
 
         public string AccoutSaved()

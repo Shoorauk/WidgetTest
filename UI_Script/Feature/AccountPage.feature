@@ -1,4 +1,4 @@
-﻿Feature: AccountPage
+﻿	Feature: AccountPage
 User wwill create account 
 
 Scenario: Add Account successfully
@@ -11,4 +11,4 @@ When Create a account with correct field label and name
 | FieldLabel | FieldName |
 | Test       | New_Test  |
 And Click on save Button
-Then Account customer field should be created
+Then Account customer field should be created "Test"

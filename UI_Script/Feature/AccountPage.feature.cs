@@ -122,7 +122,7 @@ testRunner.When("Create a account with correct field label and name", ((string)(
 testRunner.And("Click on save Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 14
-testRunner.Then("Account customer field should be created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("Account customer field should be created \"Test\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

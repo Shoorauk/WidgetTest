@@ -4,17 +4,16 @@ using NUnit.Framework;
 using RestSharp;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
+using UI_Script.Hook;
 
 namespace API_Script.Steps
 {
     [Binding]
     public sealed class GetEndPointsSteps
     {
-        private string _sessionValue = "790022524eed49d3a7c2617c6385f84e";
+    
         Dictionary<string, string> _header = new Dictionary<string, string>();
         RestClientHelper _restClientHelper = new RestClientHelper();
         IRestResponse<JsonResponseObject> restResponse { get; set; }
@@ -29,7 +28,7 @@ namespace API_Script.Steps
         public void WhenExecuteTheGetApi(Table table)
         {
             dynamic data = table.CreateDynamicInstance();
-            _header.Add("X-SessionToken", _sessionValue);
+            _header.Add("X-SessionToken", Hooks1.configSetting.SessionValue);
             restResponse = _restClientHelper.PerformGetRequest<JsonResponseObject>(data.GetUrl, _header);
         }
 
