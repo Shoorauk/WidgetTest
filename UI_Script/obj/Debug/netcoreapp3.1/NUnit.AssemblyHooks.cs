@@ -7,7 +7,7 @@ using global::NUnit.Framework;
 using global::TechTalk.SpecFlow;
 using global::System.Runtime.CompilerServices;
 
-[GeneratedCode("SpecFlow", "3.9.8")]
+[GeneratedCode("SpecFlow", "3.9.52")]
 [SetUpFixture]
 public class UI_Script_NUnitAssemblyHooks
 {

@@ -412,19 +412,19 @@ D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\nunit.engine.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\nunit.engine.core.dll
+D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\testcentric.engine.metadata.dll
+D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Config\configsetting.json
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\UI_Script.deps.json
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\UI_Script.runtimeconfig.json
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\UI_Script.runtimeconfig.dev.json
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\UI_Script.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\UI_Script.pdb
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\BoDi.dll
-D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Cucumber.Messages.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\DnsClient.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\SeleniumExtras.WaitHelpers.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Dynamitey.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\ExtentReports.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Gherkin.dll
-D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Html.Abstractions.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
@@ -432,7 +432,6 @@ D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Microsoft.AspNetCo
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -467,10 +466,11 @@ D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\TechTalk.SpecFlow.
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\SpecFlow.Assist.Dynamic.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\SpecFlow.Internal.Json.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\System.Text.Json.dll
-D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 D:\newgit\SpecflowFramework\UI_Script\bin\Debug\netcoreapp3.1\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -544,3 +544,4 @@ D:\newgit\SpecflowFramework\UI_Script\obj\Debug\netcoreapp3.1\UI_Script.csproj.C
 D:\newgit\SpecflowFramework\UI_Script\obj\Debug\netcoreapp3.1\UI_Script.dll
 D:\newgit\SpecflowFramework\UI_Script\obj\Debug\netcoreapp3.1\UI_Script.pdb
 D:\newgit\SpecflowFramework\UI_Script\obj\Debug\netcoreapp3.1\UI_Script.genruntimeconfig.cache
+D:\newgit\SpecflowFramework\UI_Script\obj\Debug\netcoreapp3.1\UI_Script.csproj.AssemblyReference.cache

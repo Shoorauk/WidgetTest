@@ -11,3 +11,6 @@ Then Verify the activation point
 | Points |
 | 500    |
 And 200 status code 
+
+
+

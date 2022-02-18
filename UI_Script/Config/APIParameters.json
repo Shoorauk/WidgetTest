@@ -1,0 +1,17 @@
+﻿{
+  "Mapping": [
+    {
+      "EndPointRequest": "UPLAND",
+      "Map": [
+        {
+          "GetUrl": "https://www.cheapoair.com/profiles/api/v1/loyalty",
+          "Header": {
+            "SessionValue": "d1d0da2b51024c8bbb15f32e1fa0809a",
+            "SessionKey": "X-SessionToken",
+            "Header3": "rating_output_mapping_json.xml"
+          }
+        }
+      ]
+    }
+  ]
+}

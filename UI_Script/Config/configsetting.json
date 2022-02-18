@@ -1,4 +1,6 @@
 ﻿{
-  "BaseUrl": "https://www.salesforce.com/",
-  "SessionValue": "c47713fd392c4e8992782f3c37863f7b"
+  "BaseUrl": "https://www.amazon.in/",
+  "SessionValue": "8942f3b44d8d454593edc211c7b6d6b2",
+  "SessionKey": "X-SessionToken",
+  "yopmailURl" : "https://yopmail.com/en/"
 }

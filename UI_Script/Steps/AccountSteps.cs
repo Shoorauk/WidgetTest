@@ -1,8 +1,4 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using UI_Script.Helper;
@@ -25,38 +21,49 @@ namespace UI_Script.Steps
 
         }
         [Given(@"Navigate to CRM account page")]
-        public void GivenNavigateToCRMAccountPage(Table table)
+        public void GivenNavigateToCRMAccountPage()
         {
-            dynamic data = table.CreateDynamicInstance();
-            //_driver.CurrentPage.As<AccountPage>().LoginCRM(Hooks1.configSetting.BaseUrl, data.userid,data.password);
-           _AccountPage.LoginCRM(Hooks1.configSetting.BaseUrl, data.userid, data.password);
-            Serilog.Log.Debug("Pass the value for entering username and password {0}", table);
+
+            _AccountPage.NavigateToAmazone(Hooks1.configSetting.BaseUrl);
+
+            //_driver.CurrentPage.As<AccountPage>().LoginCRM(loginUrl, data.userid,data.password);
+            // _AccountPage.LoginCRM(Hooks1.configSetting.BaseUrl, data.userid, data.password);
+            // Serilog.Log.Debug(_AccountPage.LoginCRM(Hooks1.configSetting.BaseUrl, data.userid, data.password));
         }
-         
-        [When(@"Create a account with correct field label and name")]
-        public void WhenCreateAAccountWithCorrectFieldLabelAndName(Table table)
+
+
+
+
+        [When(@"Sign-in a account with correct field label and name")]
+        public void WhenSign_InAAccountWithCorrectFieldLabelAndName(Table table)
         {
             dynamic data = table.CreateDynamicInstance();
-            _AccountPage.NavigateToAccount();
-            _AccountPage.OpenAccount(data.FieldLabel, data.FieldName);
+
+            _AccountPage.LoginCRM(data.userid, data.password);
         }
 
         [When(@"Click on save Button")]
         public void WhenClickOnSaveButton()
         {
-            _AccountPage.SaveAccountInfo();
+            _AccountPage.ClickonSubmitBtn();
         }
 
 
-        [Then(@"Account customer field should be created ""(.*)""")]
-        public void ThenAccountCustomerFieldShouldBeCreated(string p0)
+
+
+
+
+
+
+        [Then(@"Sign-in successfully")]
+        public void ThenSign_InSuccessfully()
         {
-            Assert.AreEqual(p0, _AccountPage.AccoutSaved());
-            Serilog.Log.Debug("expected result value {p0}",p0);
+            _AccountPage.AccoutSaved();
         }
 
 
-       
+
+
 
     }
 }

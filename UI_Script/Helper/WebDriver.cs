@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using AventStack.ExtentReports;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,9 @@ namespace UI_Script.Helper
         public IWebDriver Driver { get; set; }
 
         public BasePage CurrentPage { get; set; }
+
+
+
+        
     }
 }

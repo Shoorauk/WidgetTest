@@ -3,12 +3,15 @@
 using AventStack.ExtentReports;
 using AventStack.ExtentReports.Reporter;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
+
 using OpenQA.Selenium.Chrome;
 using Serilog;
 using Serilog.Core;
 using Serilog.Events;
 using System;
 using System.IO;
+
 using TechTalk.SpecFlow;
 using UI_Script.Config;
 using UI_Script.Helper;
@@ -27,16 +30,24 @@ namespace UI_Script.Hook
         public static ExtentTest featureName;
         public static ExtentTest step;
         public static AventStack.ExtentReports.ExtentReports extent;
-   
-        static string  reportPath = "D:\\newgit\\SpecflowFramework\\UI_Script\\Result\\ExtentReport.html";
-        static string logPath = "D:\\newgit\\SpecflowFramework\\UI_Script\\Result";
 
+        //static string  reportPath = "D:\\newgit\\SpecflowFramework\\UI_Script\\Result\\ExtentReport.html";
+        static string reportPath= Directory.GetParent(@"../../../").FullName +
+            Path.DirectorySeparatorChar + "Result\\ExtentReport.html";
+        //static string logPath = "D:\\newgit\\SpecflowFramework\\UI_Script\\Result";
+        static string logPath = Directory.GetParent(@"../../../").FullName +
+            Path.DirectorySeparatorChar + "Result";
+        //static string jsonfilePath = "D:\\newgit\\SpecflowFramework\\UI_Script\\Config\\APIParameters.json";
+        static string jsonfilePath = Directory.GetParent(@"../../../").FullName +
+            Path.DirectorySeparatorChar + "Config//APIParameters.json";
         public static ConfigSetting configSetting;
 
-         static string configSettingPath = "D:\\newgit\\SpecflowFramework\\UI_Script\\Config\\configsetting.json";
-     
-        //static string configSettingPath=System.IO.Directory.GetParent(@"../../../").FullName +
-           // Path.DirectorySeparatorChar + "Config/configsetting.json";
+        //static string configSettingPath = "D:\\newgit\\SpecflowFramework\\UI_Script\\Config\\configsetting.json";
+        public static TemplateConfigurations templateConfigurations { get; set; }
+        //private static TemplateConfigurations templateConfigurations;
+
+        static string configSettingPath=Directory.GetParent(@"../../../").FullName +
+            Path.DirectorySeparatorChar + "Config/configsetting.json";
 
         public Hooks1(WebDriver driver, FeatureContext featureContext, ScenarioContext scenarioContext)
         {
@@ -54,6 +65,14 @@ namespace UI_Script.Hook
             builder.AddJsonFile(configSettingPath);
             IConfigurationRoot configurationRoot = builder.Build();
             configurationRoot.Bind(configSetting);
+
+            //Json file for parameter
+            using (StreamReader reader = File.OpenText(jsonfilePath))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                templateConfigurations = (TemplateConfigurations)serializer.Deserialize(reader, typeof(TemplateConfigurations));
+            }
+
 
             //Reporting 
             var htmlReporter = new ExtentHtmlReporter(reportPath);
@@ -101,9 +120,11 @@ namespace UI_Script.Hook
             }
             else if (context.TestError != null)
             {
+                
                 Log.Error("Test Step Failed |  " + context.TestError.Message);
-                step.Log(Status.Fail, context.StepContext.StepInfo.Text);
+                step.Log(Status.Fail, context.StepContext.StepInfo.Text, CaptureScreenShot());
             }
+               
         }
 
         [AfterFeature]
@@ -115,7 +136,16 @@ namespace UI_Script.Hook
         [AfterScenario]
         public void AfterScenario()
         {
-           _driver.Driver.Quit();
+          _driver.Driver.Quit();
         }
+
+        public MediaEntityModelProvider CaptureScreenShot()
+        {
+            var screenShot = ((OpenQA.Selenium.ITakesScreenshot)_driver.Driver).GetScreenshot().AsBase64EncodedString;
+           
+            return MediaEntityBuilder.CreateScreenCaptureFromBase64String(screenShot).Build();
+        }
+
+       
     }
 }

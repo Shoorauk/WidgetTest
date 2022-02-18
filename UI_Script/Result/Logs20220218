@@ -1,0 +1,23 @@
+2022-02-18 16:58:39.701 |{Level :u3} |Selecting feature file "AccountPage" to run 
+2022-02-18 16:58:41.362 |{Level :u3} |Selecting feature file "Add Account successfully" to run 
+2022-02-18 16:58:51.808 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-18 16:58:53.498 |{Level :u3} |Selecting feature file "Generate new email" to run 
+2022-02-18 16:58:59.048 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-18 16:59:00.906 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-18 16:59:01.496 |{Level :u3} |Test Step Failed |    Expected: 500
+  But was:  0
+ 
+2022-02-18 17:01:05.875 |{Level :u3} |Selecting feature file "AccountPage" to run 
+2022-02-18 17:01:07.493 |{Level :u3} |Selecting feature file "Add Account successfully" to run 
+2022-02-18 17:01:18.003 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-18 17:01:19.715 |{Level :u3} |Selecting feature file "Generate new email" to run 
+2022-02-18 17:01:24.730 |{Level :u3} |Test Step Failed |    Expected string length 22 but was 21. Strings differ at index 21.
+  Expected: "hellotest@yopmail.com1"
+  But was:  "hellotest@yopmail.com"
+  --------------------------------^
+ 
+2022-02-18 17:01:25.504 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-18 17:01:27.115 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-18 17:01:28.609 |{Level :u3} |Test Step Failed |    Expected: 500
+  But was:  0
+ 

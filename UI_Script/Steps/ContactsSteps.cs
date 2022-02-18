@@ -6,6 +6,7 @@ using System.Text;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using UI_Script.Helper;
+using UI_Script.Hook;
 using UI_Script.Page;
 
 namespace UI_Script.Steps
@@ -21,27 +22,23 @@ namespace UI_Script.Steps
             _ContactsPage = new ContactsPage(_driver.Driver);
         }
 
-       
-        [When(@"Create a contracts with correct field label and name")]
-        public void WhenCreateAContractsWithCorrectFieldLabelAndName(Table table)
-        {
-            dynamic data = table.CreateDynamicInstance();
-            _ContactsPage.NavigateToContactsPage();
-            _ContactsPage.CreateContract(data.FieldLabel, data.FieldName);
 
+        [Given(@"Navigate to yopmail site")]
+        public void GivenNavigateToYopmailSite()
+        {
+            _ContactsPage.NavigateToWebsite(Hooks1.configSetting.yopmailURl);
         }
 
-        [When(@"Click on contracts save Button")]
-        public void WhenClickOnContractsSaveButton()
+        [When(@"Enter random email address")]
+        public void WhenEnterRandomEmailAddress()
         {
-            _ContactsPage.SaveContacts();
+            _ContactsPage.GenerateRandomEmailAddress();
         }
 
-        [Then(@"contracts customer field should be created")]
-        public void ThenContractsCustomerFieldShouldBeCreated()
+        [Then(@"Email should be generated")]
+        public void ThenEmailShouldBeGenerated()
         {
-            Assert.AreEqual("Test", _ContactsPage.VerifiedSavedFieldName());
+            Assert.AreEqual("hellotest@yopmail.com", _ContactsPage.CreateEmailSuccessfully());
         }
-
     }
 }

@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using System;
-
+using System.Threading;
 
 namespace UI_Script.Page
 {
@@ -18,7 +19,6 @@ namespace UI_Script.Page
             IWebElement element = null;
             try
             {
-
                 element = _driver.FindElement(locator);                
             }
             catch (Exception e)
@@ -33,8 +33,12 @@ namespace UI_Script.Page
 
         public override string getText(By locator)
         {
-             string text =getElement(locator).Text;
-            return text;
+          
+           
+               waitForelementVisible(locator);
+               string text = getElement(locator).Text;
+           
+             return text;
         }
 
         public override string getPageTitle()
@@ -119,7 +123,8 @@ namespace UI_Script.Page
             try
             {
                 waitForelementVisible(locator);
-                IWebElement element = _driver.FindElement(locator);
+                Thread.Sleep(5);
+                IWebElement element = _driver.FindElement(locator);              
                 element.SendKeys(value);
 
             }
@@ -133,12 +138,31 @@ namespace UI_Script.Page
                 catch (Exception)
                 {
 
-                    throw;
+                    try
+                    {
+                        ActionsSendkey(locator, value);
+                    }
+                    catch (Exception)
+                    {
+
+                        throw;
+                    }
                 }
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
             }
 
         }
+
+        public void ActionsSendkey(By locator,string value)
+        {
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(locator));
+            IWebElement element = _driver.FindElement(locator);
+            Actions actions = new Actions(_driver);
+            actions.SendKeys(element, value).Build().Perform();
+        }
+
+
+
     }
 }

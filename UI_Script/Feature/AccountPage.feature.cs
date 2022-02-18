@@ -100,29 +100,23 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 7
+testRunner.Given("Navigate to CRM account page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "userid",
                             "password"});
                 table1.AddRow(new string[] {
-                            "vishal.malik-rbkw@force.com",
-                            "vishal@123"});
-#line 7
-testRunner.Given("Navigate to CRM account page", ((string)(null)), table1, "Given ");
+                            "qavishal25@gmail.com",
+                            "vishal25"});
+#line 9
+testRunner.When("Sign-in a account with correct field label and name", ((string)(null)), table1, "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
-                            "FieldLabel",
-                            "FieldName"});
-                table2.AddRow(new string[] {
-                            "Test",
-                            "New_Test"});
-#line 10
-testRunner.When("Create a account with correct field label and name", ((string)(null)), table2, "When ");
-#line hidden
-#line 13
+#line 12
 testRunner.And("Click on save Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 14
-testRunner.Then("Account customer field should be created \"Test\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 13
+testRunner.Then("Sign-in successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

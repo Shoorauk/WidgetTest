@@ -105,19 +105,19 @@ this.ScenarioInitialize(scenarioInfo);
 #line 6
 testRunner.Given("Get ready all the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "GetUrl"});
-                table5.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "https://www.cheapoair.com/profiles/api/v1/loyalty"});
 #line 7
-testRunner.When("execute the get api", ((string)(null)), table5, "When ");
+testRunner.When("execute the get api", ((string)(null)), table2, "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "Points"});
-                table6.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "500"});
 #line 10
-testRunner.Then("Verify the activation point", ((string)(null)), table6, "Then ");
+testRunner.Then("Verify the activation point", ((string)(null)), table3, "Then ");
 #line hidden
 #line 13
 testRunner.And("200 status code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

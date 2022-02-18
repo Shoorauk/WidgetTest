@@ -74,12 +74,12 @@ namespace UI_Script.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add the contracts")]
-        public virtual void AddTheContracts()
+        [NUnit.Framework.DescriptionAttribute("Generate new email")]
+        public virtual void GenerateNewEmail()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add the contracts", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Generate new email", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 3
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -100,29 +100,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
-                            "userid",
-                            "password"});
-                table3.AddRow(new string[] {
-                            "vishal.malik-rbkw@force.com",
-                            "vishal@123"});
 #line 4
-testRunner.Given("Navigate to CRM account page", ((string)(null)), table3, "Given ");
+testRunner.Given("Navigate to yopmail site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
-                            "FieldLabel",
-                            "FieldName"});
-                table4.AddRow(new string[] {
-                            "Test",
-                            "New_Test"});
-#line 7
-testRunner.When("Create a contracts with correct field label and name", ((string)(null)), table4, "When ");
+#line 5
+testRunner.When("Enter random email address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 10
-testRunner.And("Click on contracts save Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 11
-testRunner.Then("contracts customer field should be created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 6
+testRunner.Then("Email should be generated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -5,10 +5,9 @@ Scenario: Add Account successfully
 
 
 Given Navigate to CRM account page
+
+When Sign-in a account with correct field label and name
 | userid                      | password   |
-| vishal.malik-rbkw@force.com | vishal@123 |
-When Create a account with correct field label and name
-| FieldLabel | FieldName |
-| Test       | New_Test  |
+| qavishal25@gmail.com        | vishal25 |
 And Click on save Button
-Then Account customer field should be created "Test"
+Then Sign-in successfully
