@@ -26,8 +26,8 @@ namespace UI_Script.Page
         public void GenerateRandomEmailAddress()
         {
             waitForelementVisible(enterEmail);
-            getElement(enterEmail).SendKeys("hellotest");
-            getElement(clickArrow).Click();
+            SendText(enterEmail, "hellotest");
+            ClickOnButton(clickArrow);
         }
 
         public string CreateEmailSuccessfully()

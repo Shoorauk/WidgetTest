@@ -30,9 +30,9 @@ namespace API_Script.Steps
         {
             var readValue = Hooks1.templateConfigurations.Mapping.FirstOrDefault(x => x.EndPointRequest.Equals("UPLAND"));
             dynamic data = table.CreateDynamicInstance();
-            // _header.Add(Hooks1.configSetting.SessionKey, Hooks1.configSetting.SessionValue);
+             _header.Add(Hooks1.configSetting.SessionKey, Hooks1.configSetting.SessionValue);
 
-            _header.Add(readValue.Map.FirstOrDefault().Header.SessionKey, readValue.Map.FirstOrDefault().Header.SessionValue);
+            //_header.Add(readValue.Map.FirstOrDefault().Header.SessionKey, readValue.Map.FirstOrDefault().Header.SessionValue);
            
             restResponse = _restClientHelper.PerformGetRequest<JsonResponseObject>(data.GetUrl, _header);
         }

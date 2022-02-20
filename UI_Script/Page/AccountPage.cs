@@ -33,12 +33,12 @@ namespace UI_Script.Page
         {
 
             waitForelementExist(clickLogin);
-            JavaScriptexecutorForClick(clickLogin);
+            ClickOnButton(clickLogin);
             waitForelementVisible(crmUsername);
-            getElement(crmUsername).SendKeys(userName);
+            SendText(crmUsername, userName);
             waitForelementVisible(clickContinue);
-            getElement(clickContinue).Click();
-            getElement(crmPassword).SendKeys(password);
+            ClickOnButton(clickContinue);
+            SendText(crmPassword, password);
 
 
 
@@ -46,7 +46,7 @@ namespace UI_Script.Page
 
         public void ClickonSubmitBtn()
         {
-            getElement(SubmitBtn).Click();
+            ClickOnButton(SubmitBtn);
         }
 
 

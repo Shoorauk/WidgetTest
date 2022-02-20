@@ -21,3 +21,39 @@
 2022-02-18 17:01:28.609 |{Level :u3} |Test Step Failed |    Expected: 500
   But was:  0
  
+2022-02-18 17:45:01.634 |{Level :u3} |Selecting feature file "AccountPage" to run 
+2022-02-18 17:45:04.162 |{Level :u3} |Selecting feature file "Add Account successfully" to run 
+2022-02-18 17:45:15.440 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-18 17:45:17.191 |{Level :u3} |Selecting feature file "Generate new email" to run 
+2022-02-18 17:45:23.327 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-18 17:45:24.964 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-18 17:45:25.519 |{Level :u3} |Test Step Failed |    Expected: 500
+  But was:  0
+ 
+2022-02-18 17:46:44.229 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-18 17:46:46.032 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-18 17:46:46.663 |{Level :u3} |Test Step Failed |    Expected: 200
+  But was:  403
+ 
+2022-02-18 17:47:23.536 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-18 17:47:25.066 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-18 18:01:43.458 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-18 18:01:44.957 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-18 18:02:47.008 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-18 18:02:48.457 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-18 18:05:19.127 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-18 18:05:20.818 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-18 18:05:21.565 |{Level :u3} |Test Step Failed |    Expected: 0
+  But was:  500
+ 
+2022-02-18 18:05:47.828 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-18 18:05:49.491 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-18 18:05:50.220 |{Level :u3} |Test Step Failed |    Expected: 403
+  But was:  200
+ 
+2022-02-18 18:06:19.163 |{Level :u3} |Selecting feature file "AccountPage" to run 
+2022-02-18 18:06:20.866 |{Level :u3} |Selecting feature file "Add Account successfully" to run 
+2022-02-18 18:06:31.687 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-18 18:06:33.101 |{Level :u3} |Selecting feature file "Generate new email" to run 
+2022-02-18 18:06:38.643 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-18 18:06:40.221 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 

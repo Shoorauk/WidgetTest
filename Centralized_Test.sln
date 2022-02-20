@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_Script", "UI_Script\UI_Script.csproj", "{B38E0869-B6CC-46B0-BACA-2E439B74D834}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Script", "API_Script\API_Script.csproj", "{39592213-EF7B-43C1-A325-22071ED1EB39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI_Script", "UI_Script\UI_Script.csproj", "{B38E0869-B6CC-46B0-BACA-2E439B74D834}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{B38E0869-B6CC-46B0-BACA-2E439B74D834}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B38E0869-B6CC-46B0-BACA-2E439B74D834}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B38E0869-B6CC-46B0-BACA-2E439B74D834}.Release|Any CPU.Build.0 = Release|Any CPU
-		{39592213-EF7B-43C1-A325-22071ED1EB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39592213-EF7B-43C1-A325-22071ED1EB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39592213-EF7B-43C1-A325-22071ED1EB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39592213-EF7B-43C1-A325-22071ED1EB39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

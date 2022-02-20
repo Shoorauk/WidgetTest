@@ -15,6 +15,7 @@ using System.IO;
 using TechTalk.SpecFlow;
 using UI_Script.Config;
 using UI_Script.Helper;
+using WebDriverManager.DriverConfigs.Impl;
 
 namespace UI_Script.Hook
 {
@@ -99,6 +100,7 @@ namespace UI_Script.Hook
         [BeforeScenario]
         public void BeforeScenario(ScenarioContext context)
         {
+            new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
             _driver.Driver = new ChromeDriver();
             _currentScenarioName = featureName.CreateNode(context.ScenarioInfo.Title);
             Log.Information("Selecting feature file {0} to run", context.ScenarioInfo.Title);

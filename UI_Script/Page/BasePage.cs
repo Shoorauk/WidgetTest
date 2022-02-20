@@ -105,7 +105,7 @@ namespace UI_Script.Page
 
                 try
                 {
-                    waitForelementExist(locator);
+                    
                     JavaScriptexecutorForClick(locator);
                 }
                 catch (Exception)
@@ -132,7 +132,7 @@ namespace UI_Script.Page
             {
                 try
                 {
-                    waitForelementExist(locator);
+                    
                     JavaScriptexecutorForSend(locator,value);
                 }
                 catch (Exception)
