@@ -1,7 +1,7 @@
 ﻿Feature: GetEndPointFeature
 	
 
-@mytag
+
 Scenario: Verify the demo api data
 Given Get ready all the data
 When execute the get api

@@ -11,5 +11,8 @@
     <Compile Update="Steps\ContactsSteps.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Steps\PostEndPointSteps.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

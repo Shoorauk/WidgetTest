@@ -103,20 +103,68 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 testRunner.Given("Navigate to CRM account page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
                             "userid",
                             "password"});
-                table3.AddRow(new string[] {
+                table4.AddRow(new string[] {
                             "qavishal25@gmail.com",
-                            "vishal25"});
-#line 9
-testRunner.When("Sign-in a account with correct field label and name", ((string)(null)), table3, "When ");
+                            "dmlzaGFsMjU="});
+#line 8
+testRunner.When("Sign-in a account with correct field label and name", ((string)(null)), table4, "When ");
 #line hidden
-#line 12
+#line 11
 testRunner.And("Click on save Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 13
+#line 12
 testRunner.Then("Sign-in successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Sign-in functionality with different domain")]
+        [NUnit.Framework.TestCaseAttribute("aryamalik2112@outlook.com", "dmlzaGFsMjU=", "Arya", null)]
+        [NUnit.Framework.TestCaseAttribute("qavishal25@gmail.com", "dmlzaGFsMjU=", "Oscar1", null)]
+        public virtual void Sign_InFunctionalityWithDifferentDomain(string email, string password, string validationtext, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("Email", email);
+            argumentsOfScenario.Add("Password", password);
+            argumentsOfScenario.Add("Validationtext", validationtext);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sign-in functionality with different domain", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 14
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 15
+testRunner.Given("Navigate to CRM account page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 16
+testRunner.When(string.Format("Enter {0} and {1}", email, password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 17
+testRunner.And("Click on save Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 18
+testRunner.Then(string.Format("Sign-in different credentials successfully {0}", validationtext), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

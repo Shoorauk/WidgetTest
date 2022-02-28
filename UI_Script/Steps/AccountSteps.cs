@@ -23,7 +23,6 @@ namespace UI_Script.Steps
         [Given(@"Navigate to CRM account page")]
         public void GivenNavigateToCRMAccountPage()
         {
-
             _AccountPage.NavigateToAmazone(Hooks1.configSetting.BaseUrl);
 
             //_driver.CurrentPage.As<AccountPage>().LoginCRM(loginUrl, data.userid,data.password);
@@ -38,9 +37,24 @@ namespace UI_Script.Steps
         public void WhenSign_InAAccountWithCorrectFieldLabelAndName(Table table)
         {
             dynamic data = table.CreateDynamicInstance();
+            string decodePassword = _AccountPage.DecodeFrom64(data.password);
 
-            _AccountPage.LoginCRM(data.userid, data.password);
+            _AccountPage.LoginCRM(data.userid, decodePassword);
         }
+
+        [When(@"Enter (.*) and (.*)")]
+        public void WhenEnterAnd(string email_id, string password)
+        {
+            string decodePassword = _AccountPage.DecodeFrom64(password);
+            _AccountPage.LoginCRM(email_id, decodePassword);
+        }
+
+        [Then(@"Sign-in different credentials successfully(.*)")]
+        public void ThenSign_InDifferentCredentialsSuccessfully(string validationText)
+        {
+            Assert.AreEqual("Hello," + validationText, _AccountPage.ReadValueFromTextBox("Hello,"+validationText));
+        }
+
 
         [When(@"Click on save Button")]
         public void WhenClickOnSaveButton()
@@ -48,17 +62,12 @@ namespace UI_Script.Steps
             _AccountPage.ClickonSubmitBtn();
         }
 
-
-
-
-
-
-
-
         [Then(@"Sign-in successfully")]
         public void ThenSign_InSuccessfully()
         {
-            _AccountPage.AccoutSaved();
+            
+            Assert.AreEqual("Hello, Oscar", _AccountPage.ReadValueFromTextBox("Hello, Oscar"));
+            
         }
 
 

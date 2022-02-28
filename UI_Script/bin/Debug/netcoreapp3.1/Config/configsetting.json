@@ -1,6 +1,8 @@
 ﻿{
   "BaseUrl": "https://www.amazon.in/",
-  "SessionValue": "5415210c9b044a3787d81ef5cdabc89c",
+  "SessionValue": "3673c0c6f95e4bb3aa1040a10d06c82d",
   "SessionKey": "X-SessionToken",
-  "yopmailURl": "https://yopmail.com/en/"
+  "yopmailURl": "https://yopmail.com/en/",
+  "testForm": "https://www.cheapoair.com/profiles/#/user-signin",
+  "formURL": "https://www.cheapoair.com/profiles/#/my-account/my-details"
 }

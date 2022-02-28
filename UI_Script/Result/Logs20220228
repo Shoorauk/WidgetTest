@@ -1,0 +1,146 @@
+2022-02-28 09:50:17.356 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-28 09:50:21.290 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-28 09:50:27.822 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 09:50:30.700 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 09:50:30.748 |{Level :u3} |Test Step Failed |  'System.Dynamic.ExpandoObject' does not contain a definition for 'table' 
+2022-02-28 09:57:05.120 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 09:57:08.043 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 09:57:09.091 |{Level :u3} |Test Step Failed |    Expected: 200
+  But was:  403
+ 
+2022-02-28 10:03:00.984 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 10:03:04.068 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 10:04:58.406 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 10:05:01.042 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 10:05:02.000 |{Level :u3} |Test Step Failed |    Expected: 200
+  But was:  403
+ 
+2022-02-28 10:06:07.827 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 10:06:09.826 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 10:06:11.238 |{Level :u3} |Test Step Failed |    Expected: 200
+  But was:  403
+ 
+2022-02-28 10:14:28.836 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 10:14:31.388 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 10:14:32.398 |{Level :u3} |Test Step Failed |    Expected: 200
+  But was:  403
+ 
+2022-02-28 10:22:26.214 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 10:22:28.869 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 10:31:35.384 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 10:31:38.240 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 11:13:46.466 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 11:13:48.774 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 11:14:12.299 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 11:14:14.649 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 11:23:39.366 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 11:23:41.425 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 11:23:42.040 |{Level :u3} |Test Step Failed |  Cannot implicitly convert type 'RestSharp.RestResponse<API_Script.JsonResponse.JsonResponseObject>' to 'RestSharp.IRestResponse<API_Script.JsonResponse.PostRequestBody>'. An explicit conversion exists (are you missing a cast?) 
+2022-02-28 11:26:39.626 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 11:26:41.618 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 11:26:42.263 |{Level :u3} |Test Step Failed |  Object reference not set to an instance of an object. 
+2022-02-28 11:29:10.179 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 11:29:12.674 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 11:34:37.782 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 11:34:39.831 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 11:34:40.466 |{Level :u3} |Test Step Failed |  Object reference not set to an instance of an object. 
+2022-02-28 11:36:41.808 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 11:36:43.846 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 11:36:44.644 |{Level :u3} |Test Step Failed |  Object reference not set to an instance of an object. 
+2022-02-28 11:46:18.476 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 11:46:20.491 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 11:46:21.105 |{Level :u3} |Test Step Failed |  Object reference not set to an instance of an object. 
+2022-02-28 11:49:23.581 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 11:49:25.522 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 11:54:36.303 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 11:54:38.788 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 11:54:39.387 |{Level :u3} |Test Step Failed |  Error reading JObject from JsonReader. Current JsonReader item is not an object: StartArray. Path '', line 1, position 1. 
+2022-02-28 12:00:55.753 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 12:00:58.007 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 12:00:58.828 |{Level :u3} |Test Step Failed |  Object reference not set to an instance of an object. 
+2022-02-28 12:03:34.107 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-28 12:03:37.513 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-28 12:03:42.345 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 12:03:44.936 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 12:03:46.119 |{Level :u3} |Selecting feature file "AccountPage" to run 
+2022-02-28 12:03:48.686 |{Level :u3} |Selecting feature file "Add Account successfully" to run 
+2022-02-28 12:04:31.792 |{Level :u3} |Selecting feature file "Sign-in functionality with different domain" to run 
+2022-02-28 12:05:12.371 |{Level :u3} |Selecting feature file "Sign-in functionality with different domain" to run 
+2022-02-28 12:06:17.791 |{Level :u3} |Test Step Failed |  no such element: Unable to locate element: {"method":"xpath","selector":"//*[normalize-space(text())='Hello, rashmi1']"}
+  (Session info: chrome=98.0.4758.102) 
+2022-02-28 12:06:18.764 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 12:06:21.605 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 12:06:52.537 |{Level :u3} |Selecting feature file "Generate new email" to run 
+2022-02-28 15:00:19.690 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-28 15:00:22.931 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-28 15:00:28.340 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 15:00:30.803 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 15:02:19.154 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 15:02:21.634 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 15:02:22.333 |{Level :u3} |Test Step Failed |  Response First name is match 
+2022-02-28 15:35:17.358 |{Level :u3} |Selecting feature file "AccountPage" to run 
+2022-02-28 15:35:19.991 |{Level :u3} |Selecting feature file "Add Account successfully" to run 
+2022-02-28 15:36:28.711 |{Level :u3} |Test Step Failed |  no such element: Unable to locate element: {"method":"xpath","selector":"//*[normalize-space(text())='Hello, rashmi']"}
+  (Session info: chrome=98.0.4758.102) 
+2022-02-28 15:37:44.249 |{Level :u3} |Selecting feature file "AccountPage" to run 
+2022-02-28 15:37:46.693 |{Level :u3} |Selecting feature file "Add Account successfully" to run 
+2022-02-28 15:38:54.399 |{Level :u3} |Test Step Failed |  no such element: Unable to locate element: {"method":"xpath","selector":"//*[normalize-space(text())='Hello, rashmi']"}
+  (Session info: chrome=98.0.4758.102) 
+2022-02-28 17:19:37.311 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 17:19:39.366 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 17:20:09.357 |{Level :u3} |Test Step Failed |    Verfied the Saved First name
+  Expected string length 5 but was 0. Strings differ at index 0.
+  Expected: "Hello"
+  But was:  <string.Empty>
+  -----------^
+ 
+2022-02-28 17:21:15.792 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 17:21:18.036 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 17:24:12.358 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 17:24:14.547 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 17:25:08.299 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 17:25:10.624 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 17:26:12.825 |{Level :u3} |Test Step Failed |    Verfied the Saved First name
+  Expected string length 5 but was 0. Strings differ at index 0.
+  Expected: "Hello"
+  But was:  <string.Empty>
+  -----------^
+ 
+2022-02-28 17:34:02.866 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 17:34:05.214 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 17:36:04.159 |{Level :u3} |Test Step Failed |  Object reference not set to an instance of an object. 
+2022-02-28 17:36:31.506 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 17:36:33.822 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 17:38:38.310 |{Level :u3} |Test Step Failed |  Object reference not set to an instance of an object. 
+2022-02-28 17:39:59.505 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 17:40:02.174 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 17:41:37.307 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 17:41:40.225 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 17:46:17.451 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 17:46:20.143 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 17:48:30.977 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 17:48:32.849 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 19:34:07.455 |{Level :u3} |Selecting feature file "AccountPage" to run 
+2022-02-28 19:34:10.698 |{Level :u3} |Selecting feature file "Add Account successfully" to run 
+2022-02-28 19:35:18.125 |{Level :u3} |Test Step Failed |  no such element: Unable to locate element: {"method":"xpath","selector":"//*[normalize-space(text())='Hello, rashmi']"}
+  (Session info: chrome=98.0.4758.102) 
+2022-02-28 19:35:23.386 |{Level :u3} |Selecting feature file "Sign-in functionality with different domain" to run 
+2022-02-28 19:36:06.116 |{Level :u3} |Selecting feature file "Sign-in functionality with different domain" to run 
+2022-02-28 19:37:33.259 |{Level :u3} |Selecting feature file "AccountPage" to run 
+2022-02-28 19:37:36.093 |{Level :u3} |Selecting feature file "Add Account successfully" to run 
+2022-02-28 20:14:42.836 |{Level :u3} |Selecting feature file "GetEndPointFeature" to run 
+2022-02-28 20:14:46.154 |{Level :u3} |Selecting feature file "Verify the demo api data" to run 
+2022-02-28 20:14:55.693 |{Level :u3} |Selecting feature file "PostEndPoint" to run 
+2022-02-28 20:14:58.617 |{Level :u3} |Selecting feature file "Verify the Post Demo Endpoint" to run 
+2022-02-28 20:14:59.171 |{Level :u3} |Test Step Failed |    Expected: 200
+  But was:  302
+ 
+2022-02-28 20:15:00.027 |{Level :u3} |Selecting feature file "AccountPage" to run 
+2022-02-28 20:15:02.705 |{Level :u3} |Selecting feature file "Add Account successfully" to run 
+2022-02-28 20:15:46.237 |{Level :u3} |Selecting feature file "Sign-in functionality with different domain" to run 
+2022-02-28 20:16:29.574 |{Level :u3} |Selecting feature file "Sign-in functionality with different domain" to run 
+2022-02-28 20:17:37.509 |{Level :u3} |Test Step Failed |  no such element: Unable to locate element: {"method":"xpath","selector":"//*[normalize-space(text())='Hello, Oscar1']"}
+  (Session info: chrome=98.0.4758.102) 
+2022-02-28 20:17:39.573 |{Level :u3} |Selecting feature file "ContactsPage" to run 
+2022-02-28 20:17:41.706 |{Level :u3} |Selecting feature file "Fill the form" to run 
+2022-02-28 20:18:23.787 |{Level :u3} |Selecting feature file "Generate new email" to run 

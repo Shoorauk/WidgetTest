@@ -12,6 +12,8 @@ namespace UI_Script.Config
         public string SessionKey { get; set; }
         
         public string yopmailURl { get; set; }
+        public string testForm { get; set; }
+        public string formURL { get; set; }
     }
 
 

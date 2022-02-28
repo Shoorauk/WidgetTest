@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,5 +41,33 @@ namespace UI_Script.Steps
         {
             Assert.AreEqual("hellotest@yopmail.com", _ContactsPage.CreateEmailSuccessfully());
         }
+
+        [Given(@"I am form page")]
+        public void GivenIAmFormPage()
+        {
+            _ContactsPage.NavigateToWebsite(Hooks1.configSetting.testForm);
+        }
+
+        [When(@"Enter all mandatory details")]
+        public void WhenEnterAllMandatoryDetails()
+        {
+           
+            _ContactsPage.login();
+           // _ContactsPage.OpenNewUrl(Hooks1.configSetting.formURL);
+            _ContactsPage.FillForm();
+        }
+
+        [When(@"Click on submit button")]
+        public void WhenClickOnSubmitButton()
+        {
+            _ContactsPage.Submit();
+        }
+
+        [Then(@"Form submit successfully")]
+        public void ThenFormSubmitSuccessfully()
+        {
+            Assert.AreEqual(_ContactsPage.SavedDetails(), "Hello kumar's Account");
+        }
+
     }
 }
