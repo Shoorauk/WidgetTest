@@ -77,7 +77,7 @@ namespace UI_Script.Hook
 
             //Reporting 
             var htmlReporter = new ExtentHtmlReporter(reportPath);
-            htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
+            htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Standard;
             extent = new AventStack.ExtentReports.ExtentReports();
             extent.AttachReporter(htmlReporter);
 
@@ -103,6 +103,7 @@ namespace UI_Script.Hook
             new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
             _driver.Driver = new ChromeDriver();
             _currentScenarioName = featureName.CreateNode(context.ScenarioInfo.Title);
+            
             Log.Information("Selecting feature file {0} to run", context.ScenarioInfo.Title);
 
         }
