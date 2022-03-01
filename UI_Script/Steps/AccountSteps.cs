@@ -10,14 +10,14 @@ namespace UI_Script.Steps
     [Binding]
     public sealed class AccountSteps
     {
-        private WebDriver _driver;
+        //private WebDriver _driver;
         private AccountPage _AccountPage;
        
 
         public AccountSteps(WebDriver driver)
         {
-            _driver = driver;
-            _AccountPage = new AccountPage(_driver.Driver);
+            //_driver = driver;
+            _AccountPage = new AccountPage(driver.Driver);
 
         }
         [Given(@"Navigate to CRM account page")]

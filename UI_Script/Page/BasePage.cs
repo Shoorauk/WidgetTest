@@ -110,6 +110,8 @@ namespace UI_Script.Page
             js.ExecuteScript("arguments[0].click();", _driver.FindElement(locator));
        
         }
+
+        
         public void JavaScriptexecutorForSend(By locator, string value)
         {
             IJavaScriptExecutor js = (IJavaScriptExecutor)_driver;
@@ -186,6 +188,12 @@ namespace UI_Script.Page
 
         }
 
+
+        public void sendKeynew()
+        {
+            _driver.FindElement(By.ClassName("gg")).SendKeys("test");
+        }
+
         public void ActionsSendkey(By locator,string value)
         {
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(locator));
@@ -238,6 +246,31 @@ namespace UI_Script.Page
             string result = new String(decoded_char);
             return result;
         }
+
+        public bool SelectFromSelectBox(WebElement wb, string VisibleText_or_Index_or_Value, string optionValue)
+        {
+            if (!optionValue.Equals(""))
+            {
+                SelectElement sel = new SelectElement(wb);
+                wb.Click();
+                Thread.Sleep(2000);
+                if (VisibleText_or_Index_or_Value.Equals("VISIBLETEXT"))
+                {
+                    sel.SelectByText(optionValue);
+                }
+                else if (VisibleText_or_Index_or_Value.Equals("INDEX"))
+                {
+                    sel.SelectByIndex(int.Parse(optionValue));
+                }
+                else if (VisibleText_or_Index_or_Value.Equals("VALUE"))
+                {
+                    sel.SelectByValue(optionValue);
+                }
+            }
+
+            return true;
+        }
+
 
     }
 }

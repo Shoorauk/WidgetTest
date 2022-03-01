@@ -144,3 +144,6 @@
 2022-02-28 20:17:39.573 |{Level :u3} |Selecting feature file "ContactsPage" to run 
 2022-02-28 20:17:41.706 |{Level :u3} |Selecting feature file "Fill the form" to run 
 2022-02-28 20:18:23.787 |{Level :u3} |Selecting feature file "Generate new email" to run 
+2022-02-28 21:10:46.916 |{Level :u3} |Selecting feature file "AccountPage" to run 
+2022-02-28 21:10:49.157 |{Level :u3} |Selecting feature file "Add Account successfully" to run 
+2022-02-28 21:11:25.041 |{Level :u3} |Test Step Failed |  Argument is of an illegal typeBy.XPath: //input[@id='continue'] (Parameter 'arg') 
