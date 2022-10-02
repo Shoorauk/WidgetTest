@@ -5,28 +5,29 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\vmalik\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\vishal_pc\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.10.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\vmalik\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\vishal_pc\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.9.52\build\SpecFlow.Tools.MsBuild.Generation.props" Condition="Exists('$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.9.52\build\SpecFlow.Tools.MsBuild.Generation.props')" />
-    <Import Project="$(NuGetPackageRoot)nunit\3.13.2\build\NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit\3.13.2\build\NUnit.props')" />
-    <Import Project="$(NuGetPackageRoot)specflow.nunit\3.9.52\build\SpecFlow.NUnit.props" Condition="Exists('$(NuGetPackageRoot)specflow.nunit\3.9.52\build\SpecFlow.NUnit.props')" />
+    <Import Project="$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props" Condition="Exists('$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props')" />
+    <Import Project="$(NuGetPackageRoot)nunit\3.13.3\build\NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit\3.13.3\build\NUnit.props')" />
+    <Import Project="$(NuGetPackageRoot)specflow.nunit\3.9.74\build\SpecFlow.NUnit.props" Condition="Exists('$(NuGetPackageRoot)specflow.nunit\3.9.74\build\SpecFlow.NUnit.props')" />
     <Import Project="$(NuGetPackageRoot)nunit3testadapter\4.2.1\build\netcoreapp2.1\NUnit3TestAdapter.props" Condition="Exists('$(NuGetPackageRoot)nunit3testadapter\4.2.1\build\netcoreapp2.1\NUnit3TestAdapter.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost\17.1.0\build\netcoreapp2.1\Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost\17.1.0\build\netcoreapp2.1\Microsoft.TestPlatform.TestHost.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\17.1.0\build\netstandard1.0\Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\17.1.0\build\netstandard1.0\Microsoft.CodeCoverage.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\17.1.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\17.1.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost\17.3.2\build\netcoreapp2.1\Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost\17.3.2\build\netcoreapp2.1\Microsoft.TestPlatform.TestHost.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\17.3.2\build\netstandard1.0\Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\17.3.2\build\netstandard1.0\Microsoft.CodeCoverage.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\17.3.2\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\17.3.2\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgBoDi Condition=" '$(PkgBoDi)' == '' ">C:\Users\vmalik\.nuget\packages\bodi\1.5.0</PkgBoDi>
-    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\vmalik\.nuget\packages\microsoft.codeanalysis.analyzers\1.1.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgBoDi Condition=" '$(PkgBoDi)' == '' ">C:\Users\vishal_pc\.nuget\packages\bodi\1.5.0</PkgBoDi>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\vishal_pc\.nuget\packages\microsoft.codeanalysis.analyzers\1.1.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgNUnit_ConsoleRunner Condition=" '$(PkgNUnit_ConsoleRunner)' == '' ">C:\Users\vishal_pc\.nuget\packages\nunit.consolerunner\3.15.2</PkgNUnit_ConsoleRunner>
   </PropertyGroup>
 </Project>

@@ -1,8 +1,4 @@
 ﻿{
-  "BaseUrl": "https://www.amazon.in/",
-  "SessionValue": "d86d9d547ab14c148691e69510ca90f7",
-  "SessionKey": "X-SessionToken",
-  "yopmailURl": "https://yopmail.com/en/",
-  "testForm": "https://www.cheapoair.com/profiles/#/user-signin",
-  "formURL": "https://www.cheapoair.com/profiles/#/my-account/my-details"
+  "BaseUrl": "https://tfl.gov.uk/"
+ 
 }

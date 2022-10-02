@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\automation\\SpecflowFramework\\UI_Script\\UI_Script.csproj": {}
+    "D:\\Client\\SpecflowFramework\\UI_Script\\UI_Script.csproj": {}
   },
   "projects": {
-    "D:\\automation\\SpecflowFramework\\UI_Script\\UI_Script.csproj": {
+    "D:\\Client\\SpecflowFramework\\UI_Script\\UI_Script.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\automation\\SpecflowFramework\\UI_Script\\UI_Script.csproj",
+        "projectUniqueName": "D:\\Client\\SpecflowFramework\\UI_Script\\UI_Script.csproj",
         "projectName": "UI_Script",
-        "projectPath": "D:\\automation\\SpecflowFramework\\UI_Script\\UI_Script.csproj",
-        "packagesPath": "C:\\Users\\vmalik\\.nuget\\packages\\",
-        "outputPath": "D:\\automation\\SpecflowFramework\\UI_Script\\obj\\",
+        "projectPath": "D:\\Client\\SpecflowFramework\\UI_Script\\UI_Script.csproj",
+        "packagesPath": "C:\\Users\\vishal_pc\\.nuget\\packages\\",
+        "outputPath": "D:\\Client\\SpecflowFramework\\UI_Script\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\vmalik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vishal_pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\shiva\\automation\\Cmf.Custom.Tests V2\\Cmf.Custom.Tests\\Nuggets": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,9 +49,9 @@
               "target": "Package",
               "version": "[3.11.0, )"
             },
-            "ExtentReports.Core": {
+            "ExtentReports": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[4.1.0, )"
             },
             "Microsoft.Extensions.Configuration.Binder": {
               "target": "Package",
@@ -62,35 +63,35 @@
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.1.0, )"
+              "version": "[17.3.2, )"
             },
             "NUnit": {
               "target": "Package",
-              "version": "[3.13.2, )"
+              "version": "[3.13.3, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.15.2, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[4.2.1, )"
             },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.1, )"
-            },
-            "RestSharp": {
-              "target": "Package",
-              "version": "[106.11.7, )"
-            },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.1.0, )"
+              "version": "[4.5.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.1.0, )"
+              "version": "[4.5.0, )"
+            },
+            "Selenium.WebDriver.MSEdgeDriver": {
+              "target": "Package",
+              "version": "[105.0.1343.27, )"
             },
             "Serilog": {
               "target": "Package",
-              "version": "[2.10.0, )"
+              "version": "[2.12.0, )"
             },
             "Serilog.Formatting.Compact": {
               "target": "Package",
@@ -102,7 +103,7 @@
             },
             "SpecFlow": {
               "target": "Package",
-              "version": "[3.9.52, )"
+              "version": "[3.9.74, )"
             },
             "SpecFlow.Assist.Dynamic": {
               "target": "Package",
@@ -110,11 +111,11 @@
             },
             "SpecFlow.NUnit": {
               "target": "Package",
-              "version": "[3.9.52, )"
+              "version": "[3.9.74, )"
             },
             "WebDriverManager": {
               "target": "Package",
-              "version": "[2.12.3, )"
+              "version": "[2.16.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

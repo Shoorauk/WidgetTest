@@ -5,13 +5,7 @@
     <Compile Update="Hooks1.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Steps\AccountSteps.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Steps\ContactsSteps.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Steps\PostEndPointSteps.cs">
+    <Compile Update="Steps\WidgetSteps.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

@@ -7,13 +7,9 @@ namespace UI_Script.Config
     public class ConfigSetting
     {
         public string BaseUrl { get; set; }
-        public string SessionValue { get; set; }
-
-        public string SessionKey { get; set; }
+       
         
-        public string yopmailURl { get; set; }
-        public string testForm { get; set; }
-        public string formURL { get; set; }
+        
     }
 
 
@@ -38,8 +34,7 @@ namespace UI_Script.Config
 
     public class Header
     {
-        public string SessionValue { get; set; }
-        public string SessionKey { get; set; }
+       
         public string Header3 { get; set; }
 
     }
